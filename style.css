@@ -2,6 +2,26 @@ head{
     background-color: #fff;
 }
 
+body{
+    /* hex value for 160,60,50*/
+    background-color: #cc0033;
+    color: #fff;
+}
+
+div{
+    margin-left: 25%;
+    background-color: aqua;
+    text-align: center;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 500px;
+    width: 50%;
+}
+
+img{
+    color: #333;
+}
+
 nav{
     background-color: #333;
     color: #fff;
@@ -17,9 +37,6 @@ nav li {
   padding: 20px;
 }
 
-body{
-    background-color: #cc2233;
-}
 
 
 
