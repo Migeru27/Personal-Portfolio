@@ -1,14 +1,22 @@
+
+
+
 head{
     background-color: #fff;
+    width: 100%;
 }
 
 body{
     /* hex value for 160,60,50*/
-    background-color: #cc0033;
+    /*
+    background-color: #cc0033; */
+    background-image: linear-gradient(45deg, #333, #cc0033);
     color: #fff;
+    
 }
 
-div{
+/* used for my image in the center of the page so people can see whos sit it is */
+#me{
     margin-left: 25%;
     background-color: aqua;
     text-align: center;
@@ -18,56 +26,15 @@ div{
     width: 50%;
 }
 
-section {
-    flex: 3;
+/*
+    nav bar 
+*/
+#top{
+    flex: 1;
     padding: 20px;
-    margin: 2%;
-  }
-
-section header {
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-    background: #13293d;
-    color: #fff;
 }
 
-.card {
-    flex: 2;
-    background-color: #fff;
-    padding: 20px;
-    margin: 1%;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    flex: 0 0 400px;
-}
-  
-.card header {
-    padding: 20px;
-    font-size: 50px;
-}
-  
-.card p {
-    text-align: center;
-}
-  
-.card img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-    height: auto;
-    margin-top: 10px;
-    
-}
-
-img{
-    color: #333;
-}
-
-nav{
+#menu{
     background-color: #333;
     color: #fff;
     list-style-type: none;
@@ -82,6 +49,106 @@ nav li {
   padding: 20px;
 }
 
+
+/*used for the sections that'll display the objects*/
+section {
+    flex: 2;
+    padding: 20px;
+    margin: 2%;
+  }
+
+section header {
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    background: rgb(22, 4, 124);
+    color: #fff;
+}
+
+.pj_item {
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: #222;
+    border-width: 8px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 50%;
+    width: 83%;
+    
+}
+  
+.pj_item header {
+    padding: 20px;
+    font-size: 50px;
+}
+  
+.pj_item p {
+    text-align: center;
+}
+  
+.pj_item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: auto;
+    margin-top: 10px;
+    
+}
+
+img{
+    color: #00c322;
+    height: 95%;
+    margin-top: 10px;
+}
+
+#preview{
+    width: 15%;
+}
+
+footer h2{
+    align-items: center;
+}
+
+/*
+
+ANIMTATONS FOR PAGE
+
+*/
+
+
+@media screen and (max-width: 700px) {
+
+    .pj_item {
+      flex-direction: column;
+      width: 90%;
+    }
+
+    #me{
+        width: 100%;
+        margin: auto;
+    }
+
+    #menu{
+        
+    }
+    
+    img{
+        height: 75%;
+        margin-top: 20px;
+        border-style: solid;
+        border-radius: 10px;
+    }
+
+    nav li{
+        display: block;
+        margin-right: 15%;
+    }
+  }
 
 
 
